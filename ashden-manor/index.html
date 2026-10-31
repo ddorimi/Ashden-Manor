@@ -3533,7 +3533,7 @@
                 });
                 back.hidden = cur === 0;
                 next.hidden = cur === LAST && sent;
-                next.textContent = cur === LAST ? 'Send my plan' : cur === LAST - 1 ? 'See my price' : 'Next';
+                next.textContent = cur === LAST ? 'Send my plan' : cur === LAST - 1 ? 'Next' : 'Next';
                 next.disabled = !valid(cur);
             }
 

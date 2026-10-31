@@ -2972,9 +2972,8 @@
                                     </div>
                                     <p class="mm-sub" id="mm-ld">Day of the week</p>
                                     <div class="chips chips-d" id="mm-days" role="group" aria-labelledby="mm-ld"></div>
-                                    <label class="mm-rough"><input type="checkbox" id="mm-rough"><span>We have not fixed
-                                            a date
-                                            yet, this is a rough idea.</span></label>
+                                    <label class="mm-rough"><input type="checkbox" id="mm-rough"><span>Date not
+                                            confirmed yet. Just a rough idea.</span></label>
                                 </fieldset>
 
                                 <fieldset class="mm-pane" data-pane="1">
@@ -3149,10 +3148,10 @@
                                 <p class="e" id="e-dt"></p>
                             </div>
                             <div><label for="gs">Number of guests</label>
-                                <div class="stp"><input id="gs" type="number" min="1" max="100"
-                                        placeholder="50"><button type="button" id="mi"
-                                        aria-label="Fewer guests">−</button><span aria-hidden="true">|</span><button
-                                        type="button" id="pl" aria-label="More guests">+</button></div>
+                                <div class="stp"><input id="gs" type="number" min="1" max="100" placeholder="50"><button
+                                        type="button" id="mi" aria-label="Fewer guests">−</button><span
+                                        aria-hidden="true">|</span><button type="button" id="pl"
+                                        aria-label="More guests">+</button></div>
                             </div>
                             <div><label for="ms">Anything you'd like us to know (optional)</label><textarea id="ms"
                                     placeholder="Leave a message"></textarea></div>
@@ -3856,7 +3855,7 @@
                     $('mm-ok-h').textContent = 'Thank you, ' + name.split(/\s+/)[0] + '!';
                     $('mm-ok-p').textContent = 'We have noted your price of ' +
                         money(current.total) + ' for a ' + DAYS[st.day] + ' in ' + MONTHS[st
-                        .month] + (st.rough ? ' (a rough idea, no date fixed yet)' : '') +
+                            .month] + (st.rough ? ' (a rough idea, no date fixed yet)' : '') +
                         '. We\'ll be in touch within 2 working days to arrange your viewing.';
                     sending = false;
                     next.classList.remove('sending');
